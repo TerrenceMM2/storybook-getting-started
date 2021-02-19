@@ -10,22 +10,20 @@
 
 ## 03 - Install Storybook
 
-**New Implementation**
+**Adding Storybook to a New Project**
 
-1. Install JS Framework (ex. React)
+1. Install JS framework (ex. React) & setup boilerplate (ex. `npx create-react-app my-app`).
 
-2. Install Storybook relative to framework being used
+2. Run `npx sb init` to add Storybook directories, setup files, and scripts.
+
+**NOTE:** Storybook needs to be installed into a project that is already setup with a framework. It will not work on an empty project.
+
+**Adding Storybook to an Existing Project**
+
+Run the following command from the code repo's root folder in the terminal:
 
 ```
-npm i @storybook/react -D
+$ npx -p @storybook/cli sb init
 ```
 
-3. Install babel-loader & babel core
-
-```
-npm i babel-loader @babel/core -D
-```
-
-4. Create `.storybook` & folder.
-
-5. Create `config.js` in `.storybook` folder.
+This will create a `.storybook` and `stories` folder similar to the manual setup. Sample stories are provide and the `package.json` `storybook` script adds a specific port.

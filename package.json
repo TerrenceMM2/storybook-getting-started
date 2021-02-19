@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --fix ./"
+    "lint": "eslint --fix ./",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.4.3",
+    "@storybook/addon-actions": "^6.1.18",
+    "@storybook/addon-essentials": "^6.1.18",
+    "@storybook/addon-links": "^6.1.18",
+    "@storybook/react": "^6.1.18",
     "babel-loader": "8.0.5"
   },
   "dependencies": {
